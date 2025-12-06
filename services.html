@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jsteve Prog Techs - Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/mylogo2.svg" alt="Jsteve Prog Techs Logo">
+        </a>
+        <button id="menu" aria-label="Toggle Menu">
+            <img src="images/menu.svg" alt="Menu Icon">
+        </button>
+        <nav id="link" class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SERVICES SECTION -->
+    <main id="services">
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="cardsgrid">
+                <div class="card">
+                    <h3>Web development</h3>
+                    <p>User friendly, fully interactive and secure modern websites.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX design</h3>
+                    <p>Modern professional user interfaces help improve their experience.</p>
+                </div>
+                <div class="card">
+                    <h3>Cybersecurity and AI development</h3>
+                    <p>We build strong security systems plus AI systems.</p>
+                </div>
+                <div class="card">
+                    <h3>Network systems manangement</h3>
+                    <p>Administering network systems with the best network administrators.</p>
+                </div>
+                <div class="card">
+                    <h3>Data analysis</h3>
+                    <p>We offer data analysis services with high security.</p>
+                </div>
+                <div class="card">
+                    <h3>IT consultation</h3>
+                    <p>We offer consultation services about IT issues.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Jsteve Prog Techs. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/jakisa-steven" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/jaksteve" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin-dreamstale45.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/256752650750" target="_blank" aria-label="WhatsApp">
+                <img src="images/whatsapp-dreamstale75.png" alt="WhatsApp">
+            </a>
+            <a href="https://facebook.com/jakisa steven" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-dreamstale25.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/stevejak321" target="_blank" aria-label="Instagram">
+                <img src="images/instagram-1-svgrepo-com.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/jaksteve3" target="_blank" aria-label="Twitter">
+                <img src="images/twitter-dreamstale71.png" alt="Twitter">
+            </a>
+            <a href="https://youtube.com/@JakSteve-b4u" target="_blank" aria-label="YouTube">
+                <img src="images/youtube2-dreamstale87.png" alt="YouTube">
+            </a>
+            <a href="mailto:stevejak321@gmail.com" aria-label="Email">
+                <img src="images/Gmail_Icon_(2013-2020).svg" alt="Email">
+            </a>
+            <a href="tel:+256752650750" aria-label="Phone">
+                <img src="images/phone.svg" alt="Phone">
+            </a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById("menu");
+        const navLinks = document.getElementById("link");
+        let open = false;
+
+        menuBtn.addEventListener("click", () => {
+            open = !open;
+            navLinks.style.display = open ? "block" : "none";
+            menuBtn.querySelector("img").src = open 
+                ? "./images/imgi_7_cross.svg" 
+                : "./images/menu.svg";
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                navLinks.style.display = "flex";
+            } else if (!open) {
+                navLinks.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

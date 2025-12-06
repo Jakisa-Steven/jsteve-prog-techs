@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jsteve Prog Techs - Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/mylogo2.svg" alt="Jsteve Prog Techs Logo">
+        </a>
+        <button id="menu" aria-label="Toggle Menu">
+            <img src="images/menu.svg" alt="Menu Icon">
+        </button>
+        <nav id="link" class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PROJECTS SECTION -->
+    <main id="projects">
+        <section class="projects">
+            <h2>Our Projects</h2>
+            <p>These are our recent projects for clients and us personally;</p>
+            <div class="cardsgrid">
+                <div class="card">
+                    <a href="https://github.com/Jakisa-Steven/fitness-trainer"><h3>Fitness Trainer website</h3></a>
+                    <p>A four-page responsive website designed for a fitness trainer, featuring workout plans, schedules, and contact information.</p>
+                </div>
+                <div class="card">
+                    <h3>Restaurant website</h3>
+                    <p>A responsive website for a restaurant, showcasing the menu, reservation system, and contact details.</p>
+                </div>
+                <div class="card">
+                    <h3>Photography portfolio</h3>
+                    <p>A portfolio website showcasing a photographer's work, including galleries and contact information.</p>
+                </div>
+                <div class="card">
+                    <h3>Shopping site</h3>
+                    <p>A responsive e-commerce website featuring product listings, shopping cart, and secure checkout.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Jsteve Prog Techs. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/jakisa-steven" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/jakisa-steven" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin-dreamstale45.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/256752650750" target="_blank" aria-label="WhatsApp">
+                <img src="images/whatsapp-dreamstale75.png" alt="WhatsApp">
+            </a>
+            <a href="https://facebook.com/jakisa steven" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-dreamstale25.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/stevejak321" target="_blank" aria-label="Instagram">
+                <img src="images/instagram-1-svgrepo-com.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/jaksteve3" target="_blank" aria-label="Twitter">
+                <img src="images/twitter-dreamstale71.png" alt="Twitter">
+            </a>
+            <a href="https://youtube.com/@JakSteve-b4u" target="_blank" aria-label="YouTube">
+                <img src="images/youtube2-dreamstale87.png" alt="YouTube">
+            </a>
+            <a href="mailto:stevejak321@gmail.com" aria-label="Email">
+                <img src="images/Gmail_Icon_(2013-2020).svg" alt="Email">
+            </a>
+            <a href="tel:+256752650750" aria-label="Phone">
+                <img src="images/phone.svg" alt="Phone">
+            </a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById("menu");
+        const navLinks = document.getElementById("link");
+        let open = false;
+
+        menuBtn.addEventListener("click", () => {
+            open = !open;
+            navLinks.style.display = open ? "block" : "none";
+            menuBtn.querySelector("img").src = open 
+                ? "./images/imgi_7_cross.svg" 
+                : "./images/menu.svg";
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                navLinks.style.display = "flex";
+            } else if (!open) {
+                navLinks.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
