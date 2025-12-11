@@ -85,6 +85,8 @@ header .logo img {
     align-items: center;
     text-align: center;
     padding: 2em 1em;
+    background-image: url('images/imgi_25_photo-person-typing-computer-keyboard-digital-technology-background_763111-259148.jpg');
+    background-size: auto;
 }
 
 .hero h1 {
@@ -177,6 +179,11 @@ header .logo img {
 #services p {
     font-size: 1.1em;
     line-height: 1.7;
+}
+
+#services img {
+    width: 30vw;
+    height: 30vw;
 }
 
 /* ---------------- CONTACT ---------------- */
