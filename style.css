@@ -78,6 +78,7 @@ header .logo img {
 
 /* ---------------- HERO ---------------- */
 #hero {
+    color: #0aa1a7;
     min-height: 65vh;
     display: flex;
     flex-direction: column;
@@ -85,8 +86,11 @@ header .logo img {
     align-items: center;
     text-align: center;
     padding: 2em 1em;
-    background-image: url('images/imgi_25_photo-person-typing-computer-keyboard-digital-technology-background_763111-259148.jpg');
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+        url('images/imgi_25_photo-person-typing-computer-keyboard-digital-technology-background_763111-259148.jpg');
     background-size: auto;
+    background-position: center;
 }
 
 .hero h1 {
